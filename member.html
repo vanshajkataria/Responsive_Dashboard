@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Materials -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/member.css">
+  <meta charset="utf-8">
+  <title>Responsive Dashboard</title>
+</head>
+
+<body>
+  <div class="container">
+    <aside>
+      <div class="top">
+        <div class="logo">
+          <img src="img/logo.png">
+          <h2>WEB<span class="danger">SITE</span></h2>
+        </div>
+        <div class="close" id="close-btn">
+          <span class="material-icons-sharp">close</span>
+        </div>
+      </div>
+      <div class="sidebar">
+        <a href="index.html">
+          <span class="material-icons-sharp">dashboard</span>
+          <h3>Dashboard</h3>
+        </a>
+        <a href="project.html">
+          <span class="material-icons-sharp">task</span>
+          <h3>Projects</h3>
+        </a>
+        <a href="member.html" class="active">
+          <span class="material-icons-sharp">people</span>
+          <h3>Team Members</h3>
+        </a>
+        <a href="login.html">
+          <span class="material-icons-sharp">logout</span>
+          <h3>Logout</h3>
+        </a>
+      </div>
+    </aside>
+    <!-- END OF ASIDE -->
+
+    <main>
+      <div class="top">
+        <div>
+          <h1>Team Members</h1>
+          <div class="date">
+            <input type="date">
+          </div>
+        </div>
+        <div class="btns">
+          <div class="delete-project">
+            <span class="material-icons-sharp">remove_circle_outline</span>
+          </div>
+          <div class="add-project">
+            <span class="material-icons-sharp">add_circle_outline</span>
+          </div>
+        </div>
+      </div>
+      <!-- END OF TOP -->
+      <div class="recent-projects">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Skills</th>
+              <th>Tasks Assigned</th>
+              <th>Money Earned</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Team 1</td>
+              <td class="skill">
+                <img src="img/html.png">
+                <img src="img/css.png">
+              </td>
+              <td>2</td>
+              <td>₹4,000</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Team 2</td>
+              <td class="skill">
+                <img src="img/html.png">
+                <img src="img/css.png">
+              </td>
+              <td>4</td>
+              <td>₹4,000</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Team 3</td>
+              <td class="skill">
+                <img src="img/html.png">
+                <img src="img/css.png">
+              </td>
+              <td>1</td>
+              <td>₹4,000</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Team 4</td>
+              <td class="skill">
+                <img src="img/html.png">
+                <img src="img/css.png">
+              </td>
+              <td>5</td>
+              <td>₹4,000</td>
+              <td class="primary">Details</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <div class="right">
+      <div class="top">
+        <button id="menu-btn">
+          <span class="material-icons-sharp">menu</span>
+        </button>
+        <div class="theme-toggler">
+          <span class="material-icons-sharp active">light_mode</span>
+          <span class="material-icons-sharp">dark_mode</span>
+        </div>
+        <div class="profile">
+          <div class="info">
+            <p>Hey, <b>Name</b></p>
+            <small class="text-muted">Admin</small>
+          </div>
+          <div class="profile-photo">
+            <img src="img/profile.png">
+          </div>
+        </div>
+      </div>
+      <!-- END OF TOP -->
+      <div class="recent-updates">
+        <h2>Recent Updates</h2>
+        <div class="updates">
+          <div class="update">
+            <div class="profile-photo">
+              <img src="img/profile.png">
+            </div>
+            <div class="message">
+              <p><b>Name</b> New Project Made</p>
+              <small class="text-muted">2 Minutes Ago</small>
+            </div>
+          </div>
+          <div class="update">
+            <div class="profile-photo">
+              <img src="img/profile.png">
+            </div>
+            <div class="message">
+              <p><b>Name</b> New Team Made</p>
+              <small class="text-muted">5 Minutes Ago</small>
+            </div>
+          </div>
+          <div class="update">
+            <div class="profile-photo">
+              <img src="img/profile.png">
+            </div>
+            <div class="message">
+              <p><b>Name</b> New Member Added</p>
+              <small class="text-muted">10 Minutes Ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END OF RECENT UPDATES -->
+      <div class="team-analytics">
+        <h2>Team Analytics</h2>
+        <div class="item html">
+          <div class="icon">
+            <span class="material-icons-sharp">html</span>
+          </div>
+          <div class="right">
+            <div class="info">
+              <h3>Team HTML</h3>
+              <small class="text-muted">Last 24 Hours</small>
+            </div>
+            <h5 class="success">+39%</h5>
+            <h3>3849</h3>
+          </div>
+        </div>
+        <div class="item css">
+          <div class="icon">
+            <span class="material-icons-sharp">css</span>
+          </div>
+          <div class="right">
+            <div class="info">
+              <h3>Team CSS</h3>
+              <small class="text-muted">Last 24 Hours</small>
+            </div>
+            <h5 class="danger">-17%</h5>
+            <h3>1000</h3>
+          </div>
+        </div>
+        <div class="item js">
+          <div class="icon">
+            <span class="material-icons-sharp">javascript</span>
+          </div>
+          <div class="right">
+            <div class="info">
+              <h3>Team JS</h3>
+              <small class="text-muted">Last 24 Hours</small>
+            </div>
+            <h5 class="success">+25%</h5>
+            <h3>849</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF RIGHT -->
+  </div>
+
+  <!-- JS SCRIPT -->
+  <script src="js/index.js"></script>
+</body>
+
+</html>
